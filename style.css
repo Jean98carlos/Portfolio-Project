@@ -1,0 +1,57 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: popLight;
+    src: url("fonts/Poppins-Light.ttf");
+}
+
+@font-face{
+    font-family: popRegular;
+    src: url("fonts/Poppins-Regular.ttf.ttf");
+}
+
+body{
+    font-family: popLight;
+}
+
+.portfolio{
+    color:white;
+    background: radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo{
+    font-size: 20px;
+}
+
+.page{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+}
+
+.details{
+    grid-column: 2/3;
+    align-self: end;
+    margin-bottom: 50px;
+}
